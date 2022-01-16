@@ -1,0 +1,139 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(36, 36, 36);
+}
+
+span {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FF0000;
+  padding: .4em;
+  border-bottom: 7px solid rgb(36, 36, 36);
+  letter-spacing: 1px;
+}
+
+nav a {
+  /* background-color:  #3B4CCA; */
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  background-color: #FF0000;
+  text-align: center;
+  line-height: 80px;
+  transition: linear .1s;
+}
+
+nav a:hover {
+  background-color: white;
+  color: rgb(36, 36, 36);
+}
+
+
+li {
+  list-style: disc;
+  padding: 2px;
+  cursor: pointer;
+  margin: 3px;
+  width: 100px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemonCard {
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.pokemonCard .card-section-top p {
+  letter-spacing: 1px;
+}
+
+.pokemonCard .card-section-bottom button {
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 28px;
+  font-weight: bolder;
+  color: #FFDE00;
+  border: 2px solid white;
+  -webkit-text-stroke: 2px #3B4CCA;
+  transition: linear .1s;
+}
+
+.pokemonCard .card-section-bottom button:hover {
+  box-shadow: 0 0 10px 0px black;
+  cursor: pointer;
+}
+.pokemonCard .card-section-bottom button:active {
+  box-shadow: 0 0 5px 0px black;
+  cursor: pointer;
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+  border: none;
+  box-shadow:inset 0 0 10px 1px rgba(131, 131, 131, 0.1);
+}
+
+.login-form-container input {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.login-form-container button {
+  padding: 5px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.login-error-container {
+  background-color: #B00020;
+  padding: 5px;
+  width: 300px;
+  border: none;
+  margin: 0 auto;
+  color: white;
+}
+
+.pokemon-detail-card {
+  text-align: center;
+}
+
+.liked-button button, .unliked-button button {
+    position: absolute;
+    height: 25px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+}
